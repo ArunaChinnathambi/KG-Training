@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.Character.CharacterControllerIT
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 45.951 sec - in com.Character.CharacterControllerIT

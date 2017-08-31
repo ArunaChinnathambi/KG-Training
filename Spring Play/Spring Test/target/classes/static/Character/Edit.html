@@ -1,0 +1,25 @@
+<h3>
+    {{ title }}
+</h3>
+<hr />
+<form role="form" style="max-width: 500px;">
+    <strong class="error">{{ error }}</strong>
+    <div class="form-group">
+        <label for="characterid">
+           Character Id
+        </label>
+        <input type="text" class="form-control" id="characterid" ng-model="id"></input>
+ 
+    </div>
+    <div class="form-group">
+        <label for="charactername">
+            Character Name
+        </label>
+        <input type="text" class="form-control" id="charactername" ng-model="name" ></input>
+
+    </div>
+    <a href="#/list" class="btn btn-info">Back to List</a>
+    <button type="submit" class="btn btn-default" ng-click="save()">
+        Submit
+    </button>
+</form>

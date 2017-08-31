@@ -1,0 +1,38 @@
+<html>
+    <body>
+        <form action="save" method="get">
+            name:<input type="text" name="empname">
+            address:<input type="text" name="address">
+            designation:<input type="text" name="designation">
+            email:<input type="text" name="email">
+            phone:<input type="text" name="phone">
+            <input type="submit" value="save">
+        </form>
+        <form action="show" method="get">
+            view all:<input type="submit" value="show all">
+        </form>
+        <form action="getid" method="get">
+            id:<input type="text" name="id">
+            get:<input type="submit" value="get data">
+        </form>
+        <form action="delete" method="get">
+            id:<input type="text" name="id">
+            get:<input type="submit" value="delete data">
+        </form>
+        <form action="designations" method="get">
+            <select name="designation">
+                <option selected="selected">Desigantion</option>
+                <option value="Traineer">Traineer</option>
+                <option value="Engineer">Engineer</option>
+                <option value="designer">designer</option>
+                <option value="Network engineer">Network engineer</option>
+            </select>
+            <input type="submit" value="getbydesignation">
+        </form> 
+        <form action="salarysave" method="get">
+           salary: <input type="text" name="salary">
+           bankdetails: <input type="text" name="bankdetails">
+           <input type="submit" value="salary details">
+        </form>
+    </body>
+</html>
