@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</head>
+
+<body>
+
+<div ng-app = "App" ng-controller="clt">
+ 
+<input type = "text" ng-model = "Model.name"><button ng-click="fun()">+</button>
+
+<ul>
+    <li ng-repeat="li in List" data-ng-click="BindSelectedData(li)">
+        {{li.name}}
+    </li>
+</ul>           
+</div>
+
+<script>
+    var app = angular.module('App', []);
+    app.controller('clt', function($scope) {
+       $scope.Model = {
+           name:''
+       };
+       $scope.List = [];
+       $scope.fun = function () {
+           var _nam = {
+               name:$scope.Model.name
+           };
+           $scope.List.push(_nam);
+           ClearModel();
+       }
+         $scope.BindSelectedData = function (li) {  
+                 
+                $scope.Model.Name = li.name;  
+                
+            }  
+       function ClearModel() {  
+               
+                $scope.Model.name = '';  
+                 
+            }       
+    });
+</script>
+
+</body>
+
+</html>
